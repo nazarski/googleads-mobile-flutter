@@ -11,10 +11,10 @@
             <rect key="frame" x="0.0" y="0.0" width="827" height="392"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L39-RW-Fxr">
-                    <rect key="frame" x="30" y="44" width="206.66666666666666" height="207"/>
+                    <rect key="frame" x="29.999999999999986" y="44.333333333333329" width="206.66666666666663" height="206.66666666666669"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ux-FJ-pGo" customClass="GADMediaView">
-                            <rect key="frame" x="0.0" y="0.0" width="206.66666666666666" height="207"/>
+                            <rect key="frame" x="0.0" y="0.0" width="206.66666666666666" height="206.66666666666666"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                     </subviews>
@@ -31,20 +31,16 @@
                     <rect key="frame" x="273" y="44" width="454" height="207"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKj-id-Sm4">
-                            <rect key="frame" x="8" y="8" width="446" height="30"/>
+                            <rect key="frame" x="8" y="8" width="446" height="199"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="446" id="UYu-Yi-Zg1"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWT-IG-tgy">
-                            <rect key="frame" x="8" y="85" width="245" height="57"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zjv-ch-qcM">
-                            <rect key="frame" x="33" y="176" width="421" height="19"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWT-IG-tgy">
+                            <rect key="frame" x="8" y="111" width="245" height="57"/>
                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -60,16 +56,22 @@
                             <color key="textColor" red="0.2274509804" green="0.4039215686" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zjv-ch-qcM">
+                            <rect key="frame" x="33" y="178" width="421" height="14.333333333333343"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="hl4-7y-gXg" firstAttribute="top" secondItem="DKj-id-Sm4" secondAttribute="bottom" constant="138" id="0Tg-39-lC8"/>
-                        <constraint firstAttribute="bottom" secondItem="Zjv-ch-qcM" secondAttribute="bottom" constant="12" id="CjG-2q-n2F"/>
-                        <constraint firstAttribute="trailing" secondItem="DKj-id-Sm4" secondAttribute="trailing" id="UoI-a1-i42"/>
+                        <constraint firstItem="DKj-id-Sm4" firstAttribute="trailing" secondItem="Zjv-ch-qcM" secondAttribute="trailing" id="CeM-c5-HTa"/>
+                        <constraint firstAttribute="bottom" secondItem="Zjv-ch-qcM" secondAttribute="bottom" constant="14.666666666666657" id="CjG-2q-n2F"/>
+                        <constraint firstItem="DKj-id-Sm4" firstAttribute="top" secondItem="Lx5-Xt-1uw" secondAttribute="topMargin" id="Yck-61-9lc"/>
+                        <constraint firstAttribute="bottom" secondItem="DKj-id-Sm4" secondAttribute="bottom" id="eDp-n1-VP6"/>
                         <constraint firstItem="Zjv-ch-qcM" firstAttribute="leading" secondItem="hl4-7y-gXg" secondAttribute="trailing" constant="8" id="fU5-cu-7Xt"/>
-                        <constraint firstItem="Zjv-ch-qcM" firstAttribute="top" secondItem="DKj-id-Sm4" secondAttribute="bottom" constant="138" id="rEn-LP-hhs"/>
-                        <constraint firstItem="DKj-id-Sm4" firstAttribute="top" secondItem="Lx5-Xt-1uw" secondAttribute="top" constant="8" id="sSI-Oo-ibp"/>
-                        <constraint firstItem="DKj-id-Sm4" firstAttribute="leading" secondItem="Lx5-Xt-1uw" secondAttribute="leading" constant="8" id="syr-GK-hqO"/>
+                        <constraint firstItem="DKj-id-Sm4" firstAttribute="leading" secondItem="pWT-IG-tgy" secondAttribute="leading" id="hBo-Bj-PTX"/>
+                        <constraint firstItem="DKj-id-Sm4" firstAttribute="leading" secondItem="hl4-7y-gXg" secondAttribute="leading" id="pvp-LM-SXD"/>
                         <constraint firstAttribute="bottom" secondItem="hl4-7y-gXg" secondAttribute="bottom" constant="12" id="x5d-wM-uYg"/>
                         <constraint firstItem="hl4-7y-gXg" firstAttribute="leading" secondItem="Lx5-Xt-1uw" secondAttribute="leading" constant="8" id="xIO-Ue-ETa"/>
                         <constraint firstAttribute="trailing" secondItem="Zjv-ch-qcM" secondAttribute="trailing" id="ygc-FQ-5ah"/>
@@ -111,7 +113,7 @@
                 <outlet property="mediaView" destination="6ux-FJ-pGo" id="aCz-rd-9bD"/>
                 <outlet property="storeView" destination="pWT-IG-tgy" id="f3q-8l-We7"/>
             </connections>
-            <point key="canvasLocation" x="-57.24637681159421" y="736.95652173913049"/>
+            <point key="canvasLocation" x="97.826086956521749" y="620.38043478260875"/>
         </view>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
     </objects>
